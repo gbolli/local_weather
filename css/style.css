@@ -1,0 +1,41 @@
+body {
+  background: url(http://i.imgur.com/Qh8OMTS.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.well {
+  background-color: rgba(192,192,192,.3);
+  border-color: black;
+}
+
+.wi {
+  margin-left: 5px;
+}
+
+.current {
+  margin-top: 50px;
+}
+
+.summary {
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.tempC {
+  font-size: 40px;
+}
+
+.iconC {
+  font-size: 40px;
+}
+
+.forecast {
+  margin-top: 60px;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+button {
+  margin-top: -30px;
+}
