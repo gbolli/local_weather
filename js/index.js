@@ -71,11 +71,12 @@ $(document).ready(function() {
     long = position.coords.longitude;
 
     // run after location acquired
+    
     getWeather();
   }
 
   // get background image (switch statement)
-  // case:  thunderstorm  $("body").css("background","url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Rooymans2000_-_Morning_Lightning_Strike_in_Singapore_(by).jpg')");
+  
   function backgroundCSS(icon) {
     $("body").css({"background":backgroundImageUrl[icon],"background-size": "cover","background-repeat":"no-repeat"});
   }
@@ -194,8 +195,6 @@ $(document).ready(function() {
           type: 'GET',
           dataType: 'json',
           url: APIUrl,  // Dark Sky API URL
-          //json: "callback",
-          //data: {},
           
           success: function (data) {
             
