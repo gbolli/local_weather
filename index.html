@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>fCC-Local Weather</title>
+  
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css'>
+<link rel="stylesheet" href="css/style.css">  
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+  
+  <!-- current -->
+  
+  <div class="row col-sm-12 text-center current">
+    <div class="col-sm-2 col-sm-offset-2 well tempC">
+      <span id="tempC">...</span>
+    </div>
+    <div class="row  col-sm-2 col-sm-offset-1 text-center summary">
+      <span id="summary">waiting for weather data...</span>
+    </div>
+    <div class="col-sm-2 col-sm-offset-1 well iconC">
+      <span id="iconC">...</i></span>
+    </div>
+  </div>
+  
+  <!-- forecast -->
+  
+  <div class="col-sm-12 row text-center forecast">
+    <div class="col-sm-2 col-sm-offset-5 well forecast">
+      <h2>Forecast</h2>
+      <br>
+      <span id="tempFC1">...</span>
+      <span id="iconFC1">...</span>
+      <br>
+      <span id="tempFC2">...</span>
+      <span id="iconFC2">...</span>
+      <br>
+      <span id="tempFC3">...</span>
+      <span id="iconFC3">...</span>
+      <br>
+      <span id="tempFC4">...</span>
+      <span id="iconFC4">...</span>
+      <br>
+      <span id="tempFC5">...</span>
+      <span id="iconFC5">...</span>
+      <br>
+      <span id="tempFC6">...</span>
+      <span id="iconFC6">...</span>
+      <br>
+      <span id="tempFC7">...</span>
+      <span id="iconFC7">...</span>
+    </div>
+  </div>
+
+  <!-- button -->
+  
+  <div class="row col-sm-12 text-center current">
+    <button id="convert" class="btn btn-primary col-sm-2 col-sm-offset-5">Toggle &degC &#47 &degF</button>
+  </div>
+
+  <!-- error reporting -->
+
+  <div class="row col-sm-12 text-center errorMsg">
+    <span id="errorMsg" class="col-sm-2 col-sm-offset-5"></span>
+  </div>
+
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
